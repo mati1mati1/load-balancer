@@ -30,7 +30,7 @@ public:
     MOCK_METHOD(void, onClose, (int fd), (override));
 private:
     bool m_Closed = false;
-
+ 
 };
 
 class MockLogger : public ILogger {
