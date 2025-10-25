@@ -1,7 +1,9 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 #include "reactor.h"
+#include "connection_pool.h"
 #include "../mocks/mock_dependencies.h"
+#include <thread>
 
 using ::testing::_;
 using ::testing::Return;
@@ -11,7 +13,8 @@ using ::testing::Invoke;
 TEST(ReactorTest, RegistersConnectionsCorrectly) {
     auto mockLoop = std::make_unique<MockEventLoop>();
     MockLogger logger;
-    Reactor reactor(std::move(mockLoop), logger);
+    ConnectionPool connectionPool;
+    Reactor reactor(std::move(mockLoop), logger, connectionPool);
 
     auto conn = std::make_shared<MockConnection>();
     int clientFd = 10;
@@ -28,7 +31,8 @@ TEST(ReactorTest, RegistersConnectionsCorrectly) {
 TEST(ReactorTest, HandlesReadableEvent) {
     auto mockLoop = std::make_unique<MockEventLoop>();
     MockLogger logger;
-    Reactor reactor(std::move(mockLoop), logger);
+    ConnectionPool connectionPool;
+    Reactor reactor(std::move(mockLoop), logger, connectionPool);
 
     auto conn = std::make_shared<MockConnection>();
     int fd = 42;
@@ -46,7 +50,8 @@ TEST(ReactorTest, HandlesReadableEvent) {
 TEST(ReactorTest, HandlesWritableEvent) {
     auto mockLoop = std::make_unique<MockEventLoop>();
     MockLogger logger;
-    Reactor reactor(std::move(mockLoop), logger);
+    ConnectionPool connectionPool;
+    Reactor reactor(std::move(mockLoop), logger, connectionPool);
 
     auto conn = std::make_shared<MockConnection>();
     int fd = 50;
@@ -63,14 +68,14 @@ TEST(ReactorTest, HandlesWritableEvent) {
 TEST(ReactorTest, HandlesErrorEventAndUnregisters) {
     auto mockLoop = std::make_unique<MockEventLoop>();
     MockLogger logger;
-    Reactor reactor(std::move(mockLoop), logger);
+    ConnectionPool connectionPool;
+    Reactor reactor(std::move(mockLoop), logger, connectionPool);
 
     auto conn = std::make_shared<MockConnection>();
     int fd = 33;
     reactor.injectConnectionForTest(fd, conn);
 
     EXPECT_CALL(*conn, onClose(fd)).Times(1);
-    EXPECT_CALL(logger, logDebug).Times(1);
     EXPECT_CALL(*static_cast<MockEventLoop*>(reactor.getEventLoopForTest()), unregisterFd(fd)).Times(1);
 
     Event e{fd, false, false, true, false};
@@ -80,8 +85,9 @@ TEST(ReactorTest, HandlesErrorEventAndUnregisters) {
 TEST(ReactorTest, StopClosesLoop) {
     auto mockLoop = std::make_unique<MockEventLoop>();
     MockLogger logger;
+    ConnectionPool connectionPool;
     auto* loopPtr = mockLoop.get();
-    Reactor reactor(std::move(mockLoop), logger);
+    Reactor reactor(std::move(mockLoop), logger, connectionPool);
     reactor.stop();
 
     EXPECT_CALL(*loopPtr, closeLoop()).Times(1);

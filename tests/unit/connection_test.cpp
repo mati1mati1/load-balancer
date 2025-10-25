@@ -19,7 +19,7 @@ TEST(ConnectionTest, FailsToConnectInvalidAddress) {
     Logger logger;
 
 
-    Connection conn(-1, backend, logger);
+    Connection conn(-1, -1, backend, logger);
     bool result = conn.connectToBackend();
 
     EXPECT_FALSE(result);
@@ -29,17 +29,18 @@ TEST(ConnectionTest, FailsToConnectInvalidPort) {
     BackendConfig backend{"127.0.0.1", 9999}; 
     Logger logger;
 
-
-
-    Connection conn(-1, backend, logger);
+    Connection conn(-1, -1, backend, logger);
     bool result = conn.connectToBackend();
 
     EXPECT_FALSE(result);
 }
 
-TEST(ConnectionTest, ConnectToValidLocalServer_Forked) {
+  TEST(ConnectionTest, ConnectToValidLocalServer_Forked) {
     int serverFd = socket(AF_INET, SOCK_STREAM, 0);
     ASSERT_GE(serverFd, 0);
+
+    int opt = 1;
+    setsockopt(serverFd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
 
     sockaddr_in addr{};
     addr.sin_family = AF_INET;
@@ -48,8 +49,7 @@ TEST(ConnectionTest, ConnectToValidLocalServer_Forked) {
 
     int rc = ::bind(serverFd, (struct sockaddr*)&addr, sizeof(addr));
     if (rc != 0) {
-        int err = errno;
-        std::cerr << "bind failed: errno=" << err << " (" << strerror(err) << ")\n";
+        std::cerr << "bind failed: errno=" << errno << " (" << strerror(errno) << ")\n";
     }
     ASSERT_EQ(rc, 0);
     ASSERT_EQ(::listen(serverFd, 1), 0);
@@ -65,17 +65,20 @@ TEST(ConnectionTest, ConnectToValidLocalServer_Forked) {
             close(clientFd);
         }
         close(serverFd);
-        _exit(0); 
-    } else {
+        _exit(0);
+    } 
+    else {
         std::this_thread::sleep_for(std::chrono::milliseconds(50)); 
 
         BackendConfig backend{"127.0.0.1", 12345};
         Logger logger;
 
-        Connection conn(-1, backend, logger);
-        bool result = conn.connectToBackend();
+        Connection conn(-1, -1, backend, logger);
 
-        EXPECT_TRUE(result);
+        bool result = conn.connectToBackend();
+        EXPECT_TRUE(result) << "connectToBackend() should return true even if backend closes early";
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
         close(serverFd);
 

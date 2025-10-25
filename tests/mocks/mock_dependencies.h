@@ -17,10 +17,19 @@ class MockConnection : public IConnection {
 public:
     MOCK_METHOD(void, onReadable, (int fd), (override));
     MOCK_METHOD(void, onWritable, (int fd), (override));
-    MOCK_METHOD(void, onClose, (int fd), (override));
     MOCK_METHOD(bool, isConnected, (), (const, override));
     MOCK_METHOD(void, setConnected, (bool connected), (override));
     MOCK_METHOD(int, getBackendFd, (), (const, override));
+    MOCK_METHOD(int, getClientFd, (), (const, override));
+    MOCK_METHOD(bool, hasBackendOpen, (), (const, override));
+    MOCK_METHOD(bool, isClientFd, (int fd), (const, override));
+    MOCK_METHOD(bool, connectToBackend, (), (override));
+    MOCK_METHOD(void, closeAll, (), (override));
+    MOCK_METHOD(const BackendConfig&, getBackendConfig, (), (const, override));
+    MOCK_METHOD(bool, isIdleFor, (std::chrono::seconds duration), (const, override));
+    MOCK_METHOD(void, onClose, (int fd), (override));
+private:
+    bool m_Closed = false;
 
 };
 

@@ -33,12 +33,17 @@ struct ShutdownConfig {
     int drainSeconds = 10;
 };
 
+struct ConnectionPoolConfig {
+    size_t maxConnectionsPerBackend = 10;
+};
+
 struct LoadBalancerConfig {
     ListenConfig listen;
     std::vector<BackendConfig> backends;
     LoggingConfig logging;
     ReactorConfig reactor;
     ShutdownConfig shutdown;
+    ConnectionPoolConfig connectionPool;
 };
 
 inline void from_json(const json& j, ListenConfig& c) {
@@ -84,10 +89,16 @@ inline void from_json(const json& j, ShutdownConfig& c) {
     if (j.contains("drainSeconds")) j.at("drainSeconds").get_to(c.drainSeconds);
 }
 
+inline void from_json(const json& j, ConnectionPoolConfig& c) {
+    if (j.contains("maxConnectionsPerBackend"))
+        j.at("maxConnectionsPerBackend").get_to(c.maxConnectionsPerBackend);
+}
+
 inline void from_json(const json& j, LoadBalancerConfig& c) {
     j.at("listen").get_to(c.listen);
     j.at("backends").get_to(c.backends);
     if (j.contains("logging"))  j.at("logging").get_to(c.logging);
     if (j.contains("reactor"))  j.at("reactor").get_to(c.reactor);
     if (j.contains("shutdown")) j.at("shutdown").get_to(c.shutdown);
+    if (j.contains("connectionPool")) j.at("connectionPool").get_to(c.connectionPool);
 }

@@ -1018,6 +1018,9 @@ CMakeFiles/acceptor_test.dir/src/acceptor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/sstream \
+  /Users/matanamichy/development/Load-balancer/include/connection_pool.h \
+  /Users/matanamichy/development/Load-balancer/include/IConnection.h \
+  /Users/matanamichy/development/Load-balancer/include/connection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arpa/inet.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/netinet/in.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/socket.h \

@@ -142,13 +142,58 @@ CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/backend_pool.cpp -o CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.s
 
+CMakeFiles/acceptor_test.dir/src/connection.cpp.o: CMakeFiles/acceptor_test.dir/flags.make
+CMakeFiles/acceptor_test.dir/src/connection.cpp.o: /Users/matanamichy/development/Load-balancer/src/connection.cpp
+CMakeFiles/acceptor_test.dir/src/connection.cpp.o: CMakeFiles/acceptor_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/acceptor_test.dir/src/connection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/acceptor_test.dir/src/connection.cpp.o -MF CMakeFiles/acceptor_test.dir/src/connection.cpp.o.d -o CMakeFiles/acceptor_test.dir/src/connection.cpp.o -c /Users/matanamichy/development/Load-balancer/src/connection.cpp
+
+CMakeFiles/acceptor_test.dir/src/connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/acceptor_test.dir/src/connection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/connection.cpp > CMakeFiles/acceptor_test.dir/src/connection.cpp.i
+
+CMakeFiles/acceptor_test.dir/src/connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/acceptor_test.dir/src/connection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/connection.cpp -o CMakeFiles/acceptor_test.dir/src/connection.cpp.s
+
+CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o: CMakeFiles/acceptor_test.dir/flags.make
+CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o: /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o: CMakeFiles/acceptor_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o -MF CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o.d -o CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o -c /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+
+CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp > CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.i
+
+CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp -o CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.s
+
+CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o: CMakeFiles/acceptor_test.dir/flags.make
+CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o: /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o: CMakeFiles/acceptor_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o -MF CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o.d -o CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o -c /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+
+CMakeFiles/acceptor_test.dir/src/network_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/acceptor_test.dir/src/network_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/network_utils.cpp > CMakeFiles/acceptor_test.dir/src/network_utils.cpp.i
+
+CMakeFiles/acceptor_test.dir/src/network_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/acceptor_test.dir/src/network_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/network_utils.cpp -o CMakeFiles/acceptor_test.dir/src/network_utils.cpp.s
+
 # Object files for target acceptor_test
 acceptor_test_OBJECTS = \
 "CMakeFiles/acceptor_test.dir/tests/unit/acceptor_test.cpp.o" \
 "CMakeFiles/acceptor_test.dir/src/acceptor.cpp.o" \
 "CMakeFiles/acceptor_test.dir/src/logger.cpp.o" \
 "CMakeFiles/acceptor_test.dir/src/router.cpp.o" \
-"CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.o"
+"CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.o" \
+"CMakeFiles/acceptor_test.dir/src/connection.cpp.o" \
+"CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o" \
+"CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o"
 
 # External object files for target acceptor_test
 acceptor_test_EXTERNAL_OBJECTS =
@@ -158,11 +203,14 @@ acceptor_test: CMakeFiles/acceptor_test.dir/src/acceptor.cpp.o
 acceptor_test: CMakeFiles/acceptor_test.dir/src/logger.cpp.o
 acceptor_test: CMakeFiles/acceptor_test.dir/src/router.cpp.o
 acceptor_test: CMakeFiles/acceptor_test.dir/src/backend_pool.cpp.o
+acceptor_test: CMakeFiles/acceptor_test.dir/src/connection.cpp.o
+acceptor_test: CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o
+acceptor_test: CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o
 acceptor_test: CMakeFiles/acceptor_test.dir/build.make
 acceptor_test: lib/libgtest_main.a
 acceptor_test: lib/libgtest.a
 acceptor_test: CMakeFiles/acceptor_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable acceptor_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable acceptor_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/acceptor_test.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/cmake -D TEST_TARGET=acceptor_test -D TEST_EXECUTABLE=/Users/matanamichy/development/Load-balancer/build/build/acceptor_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/matanamichy/development/Load-balancer/build/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=acceptor_test_TESTS -D CTEST_FILE=/Users/matanamichy/development/Load-balancer/build/build/acceptor_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
 

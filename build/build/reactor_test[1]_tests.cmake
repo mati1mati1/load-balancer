@@ -8,4 +8,6 @@ add_test([=[ReactorTest.HandlesErrorEventAndUnregisters]=]  /Users/matanamichy/d
 set_tests_properties([=[ReactorTest.HandlesErrorEventAndUnregisters]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[ReactorTest.StopClosesLoop]=]  /Users/matanamichy/development/Load-balancer/build/build/reactor_test [==[--gtest_filter=ReactorTest.StopClosesLoop]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[ReactorTest.StopClosesLoop]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  reactor_test_TESTS ReactorTest.RegistersConnectionsCorrectly ReactorTest.HandlesReadableEvent ReactorTest.HandlesWritableEvent ReactorTest.HandlesErrorEventAndUnregisters ReactorTest.StopClosesLoop)
+add_test([=[ReactorTest.ClosesIdleConnections]=]  /Users/matanamichy/development/Load-balancer/build/build/reactor_test [==[--gtest_filter=ReactorTest.ClosesIdleConnections]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ReactorTest.ClosesIdleConnections]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  reactor_test_TESTS ReactorTest.RegistersConnectionsCorrectly ReactorTest.HandlesReadableEvent ReactorTest.HandlesWritableEvent ReactorTest.HandlesErrorEventAndUnregisters ReactorTest.StopClosesLoop ReactorTest.ClosesIdleConnections)

@@ -86,10 +86,24 @@ CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/tests/unit/connection_test.cpp -o CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.s
 
+CMakeFiles/connection_test.dir/src/connection_pool.cpp.o: CMakeFiles/connection_test.dir/flags.make
+CMakeFiles/connection_test.dir/src/connection_pool.cpp.o: /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+CMakeFiles/connection_test.dir/src/connection_pool.cpp.o: CMakeFiles/connection_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/connection_test.dir/src/connection_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/connection_test.dir/src/connection_pool.cpp.o -MF CMakeFiles/connection_test.dir/src/connection_pool.cpp.o.d -o CMakeFiles/connection_test.dir/src/connection_pool.cpp.o -c /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+
+CMakeFiles/connection_test.dir/src/connection_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/connection_test.dir/src/connection_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp > CMakeFiles/connection_test.dir/src/connection_pool.cpp.i
+
+CMakeFiles/connection_test.dir/src/connection_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/connection_test.dir/src/connection_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp -o CMakeFiles/connection_test.dir/src/connection_pool.cpp.s
+
 CMakeFiles/connection_test.dir/src/connection.cpp.o: CMakeFiles/connection_test.dir/flags.make
 CMakeFiles/connection_test.dir/src/connection.cpp.o: /Users/matanamichy/development/Load-balancer/src/connection.cpp
 CMakeFiles/connection_test.dir/src/connection.cpp.o: CMakeFiles/connection_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/connection_test.dir/src/connection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/connection_test.dir/src/connection.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/connection_test.dir/src/connection.cpp.o -MF CMakeFiles/connection_test.dir/src/connection.cpp.o.d -o CMakeFiles/connection_test.dir/src/connection.cpp.o -c /Users/matanamichy/development/Load-balancer/src/connection.cpp
 
 CMakeFiles/connection_test.dir/src/connection.cpp.i: cmake_force
@@ -100,10 +114,24 @@ CMakeFiles/connection_test.dir/src/connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/connection_test.dir/src/connection.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/connection.cpp -o CMakeFiles/connection_test.dir/src/connection.cpp.s
 
+CMakeFiles/connection_test.dir/src/network_utils.cpp.o: CMakeFiles/connection_test.dir/flags.make
+CMakeFiles/connection_test.dir/src/network_utils.cpp.o: /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+CMakeFiles/connection_test.dir/src/network_utils.cpp.o: CMakeFiles/connection_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/connection_test.dir/src/network_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/connection_test.dir/src/network_utils.cpp.o -MF CMakeFiles/connection_test.dir/src/network_utils.cpp.o.d -o CMakeFiles/connection_test.dir/src/network_utils.cpp.o -c /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+
+CMakeFiles/connection_test.dir/src/network_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/connection_test.dir/src/network_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/network_utils.cpp > CMakeFiles/connection_test.dir/src/network_utils.cpp.i
+
+CMakeFiles/connection_test.dir/src/network_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/connection_test.dir/src/network_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/network_utils.cpp -o CMakeFiles/connection_test.dir/src/network_utils.cpp.s
+
 CMakeFiles/connection_test.dir/src/logger.cpp.o: CMakeFiles/connection_test.dir/flags.make
 CMakeFiles/connection_test.dir/src/logger.cpp.o: /Users/matanamichy/development/Load-balancer/src/logger.cpp
 CMakeFiles/connection_test.dir/src/logger.cpp.o: CMakeFiles/connection_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/connection_test.dir/src/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/connection_test.dir/src/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/connection_test.dir/src/logger.cpp.o -MF CMakeFiles/connection_test.dir/src/logger.cpp.o.d -o CMakeFiles/connection_test.dir/src/logger.cpp.o -c /Users/matanamichy/development/Load-balancer/src/logger.cpp
 
 CMakeFiles/connection_test.dir/src/logger.cpp.i: cmake_force
@@ -117,21 +145,25 @@ CMakeFiles/connection_test.dir/src/logger.cpp.s: cmake_force
 # Object files for target connection_test
 connection_test_OBJECTS = \
 "CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.o" \
+"CMakeFiles/connection_test.dir/src/connection_pool.cpp.o" \
 "CMakeFiles/connection_test.dir/src/connection.cpp.o" \
+"CMakeFiles/connection_test.dir/src/network_utils.cpp.o" \
 "CMakeFiles/connection_test.dir/src/logger.cpp.o"
 
 # External object files for target connection_test
 connection_test_EXTERNAL_OBJECTS =
 
 connection_test: CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.o
+connection_test: CMakeFiles/connection_test.dir/src/connection_pool.cpp.o
 connection_test: CMakeFiles/connection_test.dir/src/connection.cpp.o
+connection_test: CMakeFiles/connection_test.dir/src/network_utils.cpp.o
 connection_test: CMakeFiles/connection_test.dir/src/logger.cpp.o
 connection_test: CMakeFiles/connection_test.dir/build.make
 connection_test: lib/libgtest_main.a
 connection_test: lib/libgmock.a
 connection_test: lib/libgtest.a
 connection_test: CMakeFiles/connection_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable connection_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable connection_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/connection_test.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/cmake -D TEST_TARGET=connection_test -D TEST_EXECUTABLE=/Users/matanamichy/development/Load-balancer/build/build/connection_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/matanamichy/development/Load-balancer/build/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=connection_test_TESTS -D CTEST_FILE=/Users/matanamichy/development/Load-balancer/build/build/connection_test[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
 

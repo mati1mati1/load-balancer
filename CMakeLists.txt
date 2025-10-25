@@ -74,6 +74,9 @@ add_executable(acceptor_test
     src/logger.cpp
     src/router.cpp
     src/backend_pool.cpp
+    src/connection.cpp    
+    src/connection_pool.cpp  
+    src/network_utils.cpp 
 )
 
 target_include_directories(acceptor_test PRIVATE include)
@@ -85,9 +88,23 @@ target_link_libraries(acceptor_test
 )
 add_executable(connection_test
     tests/unit/connection_test.cpp
+    src/connection_pool.cpp
     src/connection.cpp
+    src/network_utils.cpp
     src/logger.cpp
 )
+add_executable(connection_pool_test
+    tests/unit/connection_pool_test.cpp
+    src/connection_pool.cpp
+    src/network_utils.cpp
+)
+target_link_libraries(connection_pool_test 
+    PRIVATE
+        gtest_main
+        pthread
+        nlohmann_json::nlohmann_json
+)
+add_test(NAME ConnectionPoolTest COMMAND connection_pool_test)
 
 target_include_directories(connection_test PRIVATE include)
 target_link_libraries(connection_test
@@ -100,6 +117,8 @@ target_link_libraries(connection_test
 add_executable(reactor_test
     tests/unit/reactor_test.cpp
     src/reactor.cpp
+    src/connection_pool.cpp
+    src/network_utils.cpp
 )
 
 target_include_directories(reactor_test PRIVATE
@@ -132,6 +151,8 @@ add_executable(load_balancer
     src/acceptor.cpp
     src/connection.cpp
     src/reactor.cpp
+    src/connection_pool.cpp
+    src/network_utils.cpp
     src/event_loop_factory.cpp
 )
 

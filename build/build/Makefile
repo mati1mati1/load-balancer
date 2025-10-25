@@ -237,6 +237,19 @@ connection_test/fast:
 .PHONY : connection_test/fast
 
 #=============================================================================
+# Target rules for targets named connection_pool_test
+
+# Build rule for target.
+connection_pool_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 connection_pool_test
+.PHONY : connection_pool_test
+
+# fast build rule for target.
+connection_pool_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/build
+.PHONY : connection_pool_test/fast
+
+#=============================================================================
 # Target rules for targets named reactor_test
 
 # Build rule for target.
@@ -406,6 +419,7 @@ src/connection.o: src/connection.cpp.o
 
 # target to build an object file
 src/connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection.cpp.o
 .PHONY : src/connection.cpp.o
@@ -415,6 +429,7 @@ src/connection.i: src/connection.cpp.i
 
 # target to preprocess a source file
 src/connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection.cpp.i
 .PHONY : src/connection.cpp.i
@@ -424,9 +439,46 @@ src/connection.s: src/connection.cpp.s
 
 # target to generate assembly for a file
 src/connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection.cpp.s
 .PHONY : src/connection.cpp.s
+
+src/connection_pool.o: src/connection_pool.cpp.o
+.PHONY : src/connection_pool.o
+
+# target to build an object file
+src/connection_pool.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/connection_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/connection_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o
+.PHONY : src/connection_pool.cpp.o
+
+src/connection_pool.i: src/connection_pool.cpp.i
+.PHONY : src/connection_pool.i
+
+# target to preprocess a source file
+src/connection_pool.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/connection_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/connection_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection_pool.cpp.i
+.PHONY : src/connection_pool.cpp.i
+
+src/connection_pool.s: src/connection_pool.cpp.s
+.PHONY : src/connection_pool.s
+
+# target to generate assembly for a file
+src/connection_pool.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/connection_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/connection_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/connection_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/connection_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/connection_pool.cpp.s
+.PHONY : src/connection_pool.cpp.s
 
 src/event_loop_factory.o: src/event_loop_factory.cpp.o
 .PHONY : src/event_loop_factory.o
@@ -529,6 +581,42 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/network_utils.o: src/network_utils.cpp.o
+.PHONY : src/network_utils.o
+
+# target to build an object file
+src/network_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/network_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/network_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/network_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/network_utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/network_utils.cpp.o
+.PHONY : src/network_utils.cpp.o
+
+src/network_utils.i: src/network_utils.cpp.i
+.PHONY : src/network_utils.i
+
+# target to preprocess a source file
+src/network_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/network_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/network_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/network_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/network_utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/network_utils.cpp.i
+.PHONY : src/network_utils.cpp.i
+
+src/network_utils.s: src/network_utils.cpp.s
+.PHONY : src/network_utils.s
+
+# target to generate assembly for a file
+src/network_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/acceptor_test.dir/build.make CMakeFiles/acceptor_test.dir/src/network_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_test.dir/build.make CMakeFiles/connection_test.dir/src/network_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/src/network_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reactor_test.dir/build.make CMakeFiles/reactor_test.dir/src/network_utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/load_balancer.dir/build.make CMakeFiles/load_balancer.dir/src/network_utils.cpp.s
+.PHONY : src/network_utils.cpp.s
 
 src/reactor.o: src/reactor.cpp.o
 .PHONY : src/reactor.o
@@ -659,6 +747,30 @@ tests/unit/config_manager_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/config_manager_test.dir/build.make CMakeFiles/config_manager_test.dir/tests/unit/config_manager_test.cpp.s
 .PHONY : tests/unit/config_manager_test.cpp.s
 
+tests/unit/connection_pool_test.o: tests/unit/connection_pool_test.cpp.o
+.PHONY : tests/unit/connection_pool_test.o
+
+# target to build an object file
+tests/unit/connection_pool_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/tests/unit/connection_pool_test.cpp.o
+.PHONY : tests/unit/connection_pool_test.cpp.o
+
+tests/unit/connection_pool_test.i: tests/unit/connection_pool_test.cpp.i
+.PHONY : tests/unit/connection_pool_test.i
+
+# target to preprocess a source file
+tests/unit/connection_pool_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/tests/unit/connection_pool_test.cpp.i
+.PHONY : tests/unit/connection_pool_test.cpp.i
+
+tests/unit/connection_pool_test.s: tests/unit/connection_pool_test.cpp.s
+.PHONY : tests/unit/connection_pool_test.s
+
+# target to generate assembly for a file
+tests/unit/connection_pool_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/connection_pool_test.dir/build.make CMakeFiles/connection_pool_test.dir/tests/unit/connection_pool_test.cpp.s
+.PHONY : tests/unit/connection_pool_test.cpp.s
+
 tests/unit/connection_test.o: tests/unit/connection_test.cpp.o
 .PHONY : tests/unit/connection_test.o
 
@@ -747,6 +859,7 @@ help:
 	@echo "... acceptor_test"
 	@echo "... backend_pool_test"
 	@echo "... config_manager_test"
+	@echo "... connection_pool_test"
 	@echo "... connection_test"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -767,6 +880,9 @@ help:
 	@echo "... src/connection.o"
 	@echo "... src/connection.i"
 	@echo "... src/connection.s"
+	@echo "... src/connection_pool.o"
+	@echo "... src/connection_pool.i"
+	@echo "... src/connection_pool.s"
 	@echo "... src/event_loop_factory.o"
 	@echo "... src/event_loop_factory.i"
 	@echo "... src/event_loop_factory.s"
@@ -779,6 +895,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/network_utils.o"
+	@echo "... src/network_utils.i"
+	@echo "... src/network_utils.s"
 	@echo "... src/reactor.o"
 	@echo "... src/reactor.i"
 	@echo "... src/reactor.s"
@@ -794,6 +913,9 @@ help:
 	@echo "... tests/unit/config_manager_test.o"
 	@echo "... tests/unit/config_manager_test.i"
 	@echo "... tests/unit/config_manager_test.s"
+	@echo "... tests/unit/connection_pool_test.o"
+	@echo "... tests/unit/connection_pool_test.i"
+	@echo "... tests/unit/connection_pool_test.s"
 	@echo "... tests/unit/connection_test.o"
 	@echo "... tests/unit/connection_test.i"
 	@echo "... tests/unit/connection_test.s"

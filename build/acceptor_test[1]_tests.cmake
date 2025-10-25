@@ -1,7 +1,0 @@
-add_test([=[AcceptorTest.ThrowsIfBindFails]=]  /Users/matanamichy/development/Load-balancer/build/acceptor_test [==[--gtest_filter=AcceptorTest.ThrowsIfBindFails]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[AcceptorTest.ThrowsIfBindFails]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[AcceptorTest.AcceptsAndCallsCallback]=]  /Users/matanamichy/development/Load-balancer/build/acceptor_test [==[--gtest_filter=AcceptorTest.AcceptsAndCallsCallback]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[AcceptorTest.AcceptsAndCallsCallback]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[AcceptorTest.StopCleansUpProperly]=]  /Users/matanamichy/development/Load-balancer/build/acceptor_test [==[--gtest_filter=AcceptorTest.StopCleansUpProperly]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[AcceptorTest.StopCleansUpProperly]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  acceptor_test_TESTS AcceptorTest.ThrowsIfBindFails AcceptorTest.AcceptsAndCallsCallback AcceptorTest.StopCleansUpProperly)

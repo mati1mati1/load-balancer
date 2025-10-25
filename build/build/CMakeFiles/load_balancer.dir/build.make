@@ -184,10 +184,38 @@ CMakeFiles/load_balancer.dir/src/reactor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/load_balancer.dir/src/reactor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/reactor.cpp -o CMakeFiles/load_balancer.dir/src/reactor.cpp.s
 
+CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o: CMakeFiles/load_balancer.dir/flags.make
+CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o: /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o: CMakeFiles/load_balancer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o -MF CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o.d -o CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o -c /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp
+
+CMakeFiles/load_balancer.dir/src/connection_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/load_balancer.dir/src/connection_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp > CMakeFiles/load_balancer.dir/src/connection_pool.cpp.i
+
+CMakeFiles/load_balancer.dir/src/connection_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/load_balancer.dir/src/connection_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/connection_pool.cpp -o CMakeFiles/load_balancer.dir/src/connection_pool.cpp.s
+
+CMakeFiles/load_balancer.dir/src/network_utils.cpp.o: CMakeFiles/load_balancer.dir/flags.make
+CMakeFiles/load_balancer.dir/src/network_utils.cpp.o: /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+CMakeFiles/load_balancer.dir/src/network_utils.cpp.o: CMakeFiles/load_balancer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/load_balancer.dir/src/network_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/load_balancer.dir/src/network_utils.cpp.o -MF CMakeFiles/load_balancer.dir/src/network_utils.cpp.o.d -o CMakeFiles/load_balancer.dir/src/network_utils.cpp.o -c /Users/matanamichy/development/Load-balancer/src/network_utils.cpp
+
+CMakeFiles/load_balancer.dir/src/network_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/load_balancer.dir/src/network_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/matanamichy/development/Load-balancer/src/network_utils.cpp > CMakeFiles/load_balancer.dir/src/network_utils.cpp.i
+
+CMakeFiles/load_balancer.dir/src/network_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/load_balancer.dir/src/network_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/matanamichy/development/Load-balancer/src/network_utils.cpp -o CMakeFiles/load_balancer.dir/src/network_utils.cpp.s
+
 CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o: CMakeFiles/load_balancer.dir/flags.make
 CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o: /Users/matanamichy/development/Load-balancer/src/event_loop_factory.cpp
 CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o: CMakeFiles/load_balancer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o -MF CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o.d -o CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o -c /Users/matanamichy/development/Load-balancer/src/event_loop_factory.cpp
 
 CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.i: cmake_force
@@ -201,7 +229,7 @@ CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.s: cmake_force
 CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o: CMakeFiles/load_balancer.dir/flags.make
 CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o: /Users/matanamichy/development/Load-balancer/src/kqueue_event_loop.cpp
 CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o: CMakeFiles/load_balancer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o -MF CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o.d -o CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o -c /Users/matanamichy/development/Load-balancer/src/kqueue_event_loop.cpp
 
 CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.i: cmake_force
@@ -222,6 +250,8 @@ load_balancer_OBJECTS = \
 "CMakeFiles/load_balancer.dir/src/acceptor.cpp.o" \
 "CMakeFiles/load_balancer.dir/src/connection.cpp.o" \
 "CMakeFiles/load_balancer.dir/src/reactor.cpp.o" \
+"CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o" \
+"CMakeFiles/load_balancer.dir/src/network_utils.cpp.o" \
 "CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o" \
 "CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o"
 
@@ -236,11 +266,13 @@ load_balancer: CMakeFiles/load_balancer.dir/src/router.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/src/acceptor.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/src/connection.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/src/reactor.cpp.o
+load_balancer: CMakeFiles/load_balancer.dir/src/connection_pool.cpp.o
+load_balancer: CMakeFiles/load_balancer.dir/src/network_utils.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/src/event_loop_factory.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/src/kqueue_event_loop.cpp.o
 load_balancer: CMakeFiles/load_balancer.dir/build.make
 load_balancer: CMakeFiles/load_balancer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable load_balancer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable load_balancer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/load_balancer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -5,7 +5,6 @@
 
 using namespace std;
 
-// Helper: create a temp JSON config file given a path
 static void writeConfigFile(const string& path, const string& content) {
     ofstream file(path);
     if (!file.is_open()) {
@@ -15,12 +14,8 @@ static void writeConfigFile(const string& path, const string& content) {
     file.close();
 }
 
-// -------------------------------
-// TEST SUITE: ConfigManager Tests
-// -------------------------------
 
 TEST(ConfigManagerTest, LoadValidConfig) {
-    // ✅ Valid sample JSON
     string jsonContent = R"({
         "listen": { "host": "0.0.0.0", "port": 8080 },
         "backends": [
@@ -42,56 +37,49 @@ TEST(ConfigManagerTest, LoadValidConfig) {
     ConfigManager manager(filePath);
     const LoadBalancerConfig& cfg = manager.getConfig();
 
-    // Listen block
     EXPECT_EQ(cfg.listen.host, "0.0.0.0");
     EXPECT_EQ(cfg.listen.port, 8080);
 
-    // Backends
     ASSERT_EQ(cfg.backends.size(), 2);
     EXPECT_EQ(cfg.backends[0].host, "127.0.0.1");
     EXPECT_EQ(cfg.backends[0].port, 9001);
     EXPECT_EQ(cfg.backends[1].host, "127.0.0.1");
     EXPECT_EQ(cfg.backends[1].port, 9002);
 
-    // Logging
     EXPECT_EQ(cfg.logging.level, "info");
     EXPECT_EQ(cfg.logging.mode, "stdout");
 
-    // Reactor
     EXPECT_EQ(cfg.reactor.threads, 4);
     EXPECT_EQ(cfg.reactor.connectionReadBuffer, 65536);
     EXPECT_EQ(cfg.reactor.connectionWriteBuffer, 65536);
 
-    // Shutdown
     EXPECT_EQ(cfg.shutdown.drainSeconds, 10);
 }
 
-// ❌ Missing file test
 TEST(ConfigManagerTest, ThrowsIfFileNotFound) {
+    ConfigManager manager("non_existent_file.json");
     EXPECT_THROW({
-        ConfigManager manager("non_existent_file.json");
+        manager.getConfig();
     }, runtime_error);
 }
 
-// ❌ Invalid JSON test
 TEST(ConfigManagerTest, ThrowsIfInvalidJson) {
     string invalidJson = R"({ "listen": { "host": "0.0.0.0" } })";  
     string filePath = "temp_invalid_config.json";
     writeConfigFile(filePath, invalidJson);
-
+    ConfigManager manager(filePath);
     EXPECT_THROW({
-        ConfigManager manager(filePath);
+        manager.getConfig();
     }, runtime_error);
 }
 
-// ❌ Invalid json format test
 TEST(ConfigManagerTest, ThrowsIfInvalidJsonFormat) {
     string invalidJson = R"({ "listen": { "host": "0.0.0.0" )";  
     string filePath = "temp_invalid_config.json";
     writeConfigFile(filePath, invalidJson);
-
+    ConfigManager manager(filePath);
     EXPECT_THROW({
-        ConfigManager manager(filePath);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -105,9 +93,9 @@ TEST(ConfigValidationTest, ThrowsIfListenPortOutOfRange) {
     })";
     string path = "temp_invalid_port.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 TEST(ConfigValidationTest, ThrowsIfListenHostMissing) {
@@ -120,9 +108,9 @@ TEST(ConfigValidationTest, ThrowsIfListenHostMissing) {
     })";
     string path = "temp_invalid_port.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -136,9 +124,9 @@ TEST(ConfigValidationTest, ThrowsIfNoBackends) {
     })";
     string path = "temp_no_backends.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -152,9 +140,9 @@ TEST(ConfigValidationTest, ThrowsIfBackendHostEmpty) {
     })";
     string path = "temp_empty_host.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -168,9 +156,9 @@ TEST(ConfigValidationTest, ThrowsIfBackendPortInvalid) {
     })";
     string path = "temp_invalid_backend_port.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -184,9 +172,9 @@ TEST(ConfigValidationTest, ThrowsIfLoggingLevelInvalid) {
     })";
     string path = "temp_invalid_logging.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     }, runtime_error);
 }
 
@@ -200,8 +188,8 @@ TEST(ConfigValidationTest, PassesWithValidConfig) {
     })";
     string path = "temp_valid_config.json";
     writeConfigFile(path, jsonContent);
-
+    ConfigManager manager(path);
     EXPECT_NO_THROW({
-        ConfigManager manager(path);
+        manager.getConfig();
     });
 }

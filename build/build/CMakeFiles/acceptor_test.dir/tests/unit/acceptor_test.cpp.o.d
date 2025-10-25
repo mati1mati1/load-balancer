@@ -1071,4 +1071,6 @@ CMakeFiles/acceptor_test.dir/tests/unit/acceptor_test.cpp.o: \
   /Users/matanamichy/development/Load-balancer/include/backend_pool.h \
   /Users/matanamichy/development/Load-balancer/include/logger.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream \
-  /Users/matanamichy/development/Load-balancer/include/ILogger.h
+  /Users/matanamichy/development/Load-balancer/include/ILogger.h \
+  /Users/matanamichy/development/Load-balancer/include/connection_pool.h \
+  /Users/matanamichy/development/Load-balancer/include/IConnection.h

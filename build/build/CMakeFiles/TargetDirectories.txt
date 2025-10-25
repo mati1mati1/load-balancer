@@ -3,6 +3,7 @@
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/router_test.dir
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/acceptor_test.dir
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/connection_test.dir
+/Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/connection_pool_test.dir
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/reactor_test.dir
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/load_balancer.dir
 /Users/matanamichy/development/Load-balancer/build/build/CMakeFiles/test.dir

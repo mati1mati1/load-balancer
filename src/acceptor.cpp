@@ -1,4 +1,5 @@
 #include "acceptor.h"
+#include "connection.h"
 #include <arpa/inet.h>
 #include <netinet/in.h>
 #include <sys/socket.h>
@@ -10,12 +11,14 @@
 Acceptor::Acceptor(const ListenConfig& listenConfig,
                    Router& router,
                    ILogger& logger,
+                   ConnectionPool& connectionPool,
                    AcceptCallback onAccept)
     : m_Host(listenConfig.host),
       m_Port(listenConfig.port),
       m_Backlog(listenConfig.backlog),
       m_Router(router),
       m_Logger(logger),
+      m_ConnectionPool(connectionPool),
       m_OnAcceptCallback(std::move(onAccept))
 {
     setupListeningSocket();
@@ -113,7 +116,10 @@ void Acceptor::acceptLoop() {
 
         try {
             auto backend = m_Router.selectBackend();
-            m_OnAcceptCallback(clientFd, backend);
+            int backendFd = m_ConnectionPool.acquire(backend);
+
+            auto conn = std::make_shared<Connection>(clientFd, backendFd, backend, m_Logger);
+            m_OnAcceptCallback(conn, clientFd, backend);
         } catch (const std::exception& ex) {
             m_Logger.logError(std::string("Error selecting backend: ") + ex.what());
             close(clientFd);
@@ -126,4 +132,8 @@ void Acceptor::closeListeningSocket() {
         close(m_ServerFd);
         m_ServerFd = -1;
     }
+}
+
+void Acceptor::onConnectionClosed(std::shared_ptr<IConnection> conn) {
+    m_ConnectionPool.release(conn->getBackendConfig(), conn->getBackendFd());
 }

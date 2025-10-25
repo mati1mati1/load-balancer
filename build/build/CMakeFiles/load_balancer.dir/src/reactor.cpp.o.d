@@ -887,7 +887,135 @@ CMakeFiles/load_balancer.dir/src/reactor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/unary_negate.h \
   /Users/matanamichy/development/Load-balancer/include/IConnection.h \
+  /Users/matanamichy/development/Load-balancer/include/config_types.h \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/json.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/adl_serializer.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/abi_macros.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/conversions/from_json.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/forward_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/valarray \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/exceptions.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/value_t.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/macro_scope.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/detected.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/void_t.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/assert.h \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/string_escape.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/position_t.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/cpp_future.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/type_traits.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/call_std/end.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/json_fwd.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/string_concat.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/identity_tag.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/std_fs.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/file_clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_json.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ranges \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/all.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/owning_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/range_adaptor.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/ref_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/as_rvalue_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/common_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/counted.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/span \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/span.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/empty_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/iota_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/movable_box.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/repeat_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/drop_while_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/elements_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/filter_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/join_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/single_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rbegin.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/rend.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/reverse_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/split_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/take_while_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/to.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/transform_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/views.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/zip_view.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/istream_view.h \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/byte_container_with_subtype.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/hash.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/binary_reader.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/input_adapters.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/json_sax.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/lexer.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/meta/is_sax.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/input/parser.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/json_custom_base_class.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/json_pointer.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/json_ref.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/output/binary_writer.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/output/output_adapters.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/output/serializer.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/conversions/to_chars.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/ordered_map.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/any \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/detail/macro_unscope.hpp \
+  /Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-src/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
   /Users/matanamichy/development/Load-balancer/include/ILogger.h \
+  /Users/matanamichy/development/Load-balancer/include/connection_pool.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/thread \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/formatter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/thread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/sstream \
   /Users/matanamichy/development/Load-balancer/include/event_loop_factory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/unistd.h \
@@ -904,7 +1032,4 @@ CMakeFiles/load_balancer.dir/src/reactor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_sa_family_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_socklen_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_iovec_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/bitset
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream

@@ -5,12 +5,17 @@
 #include <arpa/inet.h>
 #include <sys/fcntl.h>
 
-Connection::Connection(int clientFd, const BackendConfig& backend, ILogger& logger)
+Connection::Connection(int clientFd, int backendFd, const BackendConfig& backend, ILogger& logger)
     : m_ClientFd(clientFd),
+      m_BackendFd(backendFd),
       m_Backend(backend),
       m_Logger(logger),
       m_Connected(false),
-      m_BackendFd(-1) {}
+      m_LastActivity(std::chrono::steady_clock::now())
+      {
+        m_Logger.logDebug("Connection created: clientFd=" + std::to_string(clientFd) +
+                      ", backendFd=" + std::to_string(backendFd));
+      }
 
 Connection::~Connection() {
     closeAll();
@@ -66,6 +71,8 @@ void Connection::closeAll() {
 }
 
 void Connection::onReadable(int fd) {
+    refreshActivity();
+    m_Logger.logInfo("Readable event on fd " + std::to_string(fd));
     char buffer[8192];
     ssize_t bytesRead = recv(fd, buffer, sizeof(buffer), 0);
     if (bytesRead < 0) {
@@ -104,7 +111,7 @@ void Connection::onReadable(int fd) {
 }
 
 void Connection::onWritable(int fd) {
-
+    refreshActivity();
     auto it = m_PendingWrites.find(fd);
     if (it == m_PendingWrites.end() || it->second.empty()) {
         return;
@@ -146,4 +153,14 @@ void Connection::onClose(int fd) {
         m_Logger.logDebug("Both ends closed; cleaning up connection");
         m_Connected = false;
     }
+}
+
+
+void Connection::refreshActivity() {
+    m_LastActivity = std::chrono::steady_clock::now();
+}
+
+bool Connection::isIdleFor(std::chrono::seconds duration) const {
+    auto now = std::chrono::steady_clock::now();
+    return (now - m_LastActivity) > duration;
 }

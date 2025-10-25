@@ -1021,9 +1021,9 @@ CMakeFiles/load_balancer.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iostream \
   /Users/matanamichy/development/Load-balancer/include/ILogger.h \
+  /Users/matanamichy/development/Load-balancer/include/connection_pool.h \
+  /Users/matanamichy/development/Load-balancer/include/IConnection.h \
   /Users/matanamichy/development/Load-balancer/include/event_loop.h \
   /Users/matanamichy/development/Load-balancer/include/reactor.h \
-  /Users/matanamichy/development/Load-balancer/include/IConnection.h \
   /Users/matanamichy/development/Load-balancer/include/config_manager.h \
-  /Users/matanamichy/development/Load-balancer/include/event_loop_factory.h \
-  /Users/matanamichy/development/Load-balancer/include/connection.h
+  /Users/matanamichy/development/Load-balancer/include/event_loop_factory.h

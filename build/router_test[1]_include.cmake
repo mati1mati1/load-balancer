@@ -1,5 +1,0 @@
-if(EXISTS "/Users/matanamichy/development/Load-balancer/build/router_test[1]_tests.cmake")
-  include("/Users/matanamichy/development/Load-balancer/build/router_test[1]_tests.cmake")
-else()
-  add_test(router_test_NOT_BUILT router_test_NOT_BUILT)
-endif()

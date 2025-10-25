@@ -4,6 +4,9 @@
 #include <sys/socket.h>
 #include <cstring>
 #include <iostream>
+#include <thread>
+#include <atomic>
+
 Reactor::~Reactor() {
     stop();
 }
@@ -49,6 +52,11 @@ void Reactor::handleEvent(Event& e) {
         m_Logger.logDebug("Error/Close event on fd=" + std::to_string(e.fd));
         m_Logger.logDebug("Error: " + std::string(strerror(errno)));
         conn->onClose(e.fd);
+
+        if (conn->isClientFd(e.fd) && conn->hasBackendOpen()) {
+            m_ConnectionPool.release(conn->getBackendConfig(), conn->getBackendFd());
+        }
+
         unregisterConnection(e.fd);
         return;
     }
@@ -81,4 +89,37 @@ void Reactor::handleEvent(Event& e) {
 void Reactor::stop() {
     m_Running = false;
     m_Loop->closeLoop();
+}
+
+void Reactor::setIdleTimeout(std::chrono::seconds timeout) {
+    m_IdleTimeout = timeout;
+
+    if (m_IdleThread.joinable()) {
+        m_StopIdleMonitor = true;
+        m_IdleThread.join();
+    }
+
+    if (timeout.count() > 0) {
+        m_StopIdleMonitor = false;
+        m_IdleThread = std::thread(&Reactor::monitorIdleConnections, this);
+    }
+}
+
+void Reactor::monitorIdleConnections() {
+    m_Logger.logInfo("Idle monitor thread started");
+    while (!m_StopIdleMonitor) {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+
+        for (auto it = m_Connections.begin(); it != m_Connections.end();) {
+            auto conn = it->second;
+            if (conn->isIdleFor(m_IdleTimeout)) {
+                m_Logger.logInfo("Closing idle connection fd=" + std::to_string(it->first));
+                conn->onClose(it->first);
+                it = m_Connections.erase(it);
+            } else {
+                ++it;
+            }
+        }
+    }
+    m_Logger.logInfo("Idle monitor thread stopped");
 }

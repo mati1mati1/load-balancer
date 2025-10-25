@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/connection_test.dir/src/connection.cpp.o"
   "CMakeFiles/connection_test.dir/src/connection.cpp.o.d"
+  "CMakeFiles/connection_test.dir/src/connection_pool.cpp.o"
+  "CMakeFiles/connection_test.dir/src/connection_pool.cpp.o.d"
   "CMakeFiles/connection_test.dir/src/logger.cpp.o"
   "CMakeFiles/connection_test.dir/src/logger.cpp.o.d"
+  "CMakeFiles/connection_test.dir/src/network_utils.cpp.o"
+  "CMakeFiles/connection_test.dir/src/network_utils.cpp.o.d"
   "CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.o"
   "CMakeFiles/connection_test.dir/tests/unit/connection_test.cpp.o.d"
   "connection_test"

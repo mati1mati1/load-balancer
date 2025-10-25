@@ -1,6 +1,0 @@
-ConfigManagerTest.LoadValidConfig 0 0
-ConfigManagerTest.ThrowsIfFileNotFound 2 0.00222
-ConfigManagerTest.ThrowsIfInvalidJson 0 0
----
-ConfigManagerTest.LoadValidConfig
-ConfigManagerTest.ThrowsIfInvalidJson
