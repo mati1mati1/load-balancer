@@ -1,0 +1,5 @@
+if(EXISTS "/Users/matanamichy/development/Load-balancer/build/build/reactor_test[1]_tests.cmake")
+  include("/Users/matanamichy/development/Load-balancer/build/build/reactor_test[1]_tests.cmake")
+else()
+  add_test(reactor_test_NOT_BUILT reactor_test_NOT_BUILT)
+endif()

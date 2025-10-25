@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/matanamichy/development/Load-balancer/build/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

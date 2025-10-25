@@ -1,0 +1,7 @@
+{
+        "listen": { "host": "", "port": 80000 },
+        "backends": [{ "host": "127.0.0.1", "port": 9001 }],
+        "logging": { "level": "info", "mode": "stdout" },
+        "reactor": { "threads": 2 },
+        "shutdown": { "drainSeconds": 5 }
+    }

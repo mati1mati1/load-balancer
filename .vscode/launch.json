@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug GTest",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/config_manager_test",
+      "args": ["--gtest_filter=ConfigManagerTest.LoadValidConfig"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb"
+    }
+  ]
+}

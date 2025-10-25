@@ -1,0 +1,5 @@
+if(EXISTS "/Users/matanamichy/development/Load-balancer/build/connection_test[1]_tests.cmake")
+  include("/Users/matanamichy/development/Load-balancer/build/connection_test[1]_tests.cmake")
+else()
+  add_test(connection_test_NOT_BUILT connection_test_NOT_BUILT)
+endif()

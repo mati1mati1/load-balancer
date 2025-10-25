@@ -1,0 +1,7 @@
+add_test([=[ConnectionTest.FailsToConnectInvalidAddress]=]  /Users/matanamichy/development/Load-balancer/build/connection_test [==[--gtest_filter=ConnectionTest.FailsToConnectInvalidAddress]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ConnectionTest.FailsToConnectInvalidAddress]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ConnectionTest.FailsToConnectInvalidPort]=]  /Users/matanamichy/development/Load-balancer/build/connection_test [==[--gtest_filter=ConnectionTest.FailsToConnectInvalidPort]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ConnectionTest.FailsToConnectInvalidPort]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[ConnectionTest.ConnectToValidLocalServer_Forked]=]  /Users/matanamichy/development/Load-balancer/build/connection_test [==[--gtest_filter=ConnectionTest.ConnectToValidLocalServer_Forked]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[ConnectionTest.ConnectToValidLocalServer_Forked]=]  PROPERTIES WORKING_DIRECTORY /Users/matanamichy/development/Load-balancer/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  connection_test_TESTS ConnectionTest.FailsToConnectInvalidAddress ConnectionTest.FailsToConnectInvalidPort ConnectionTest.ConnectToValidLocalServer_Forked)

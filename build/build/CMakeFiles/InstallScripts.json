@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/matanamichy/development/Load-balancer/build/build/cmake_install.cmake",
+		"/Users/matanamichy/development/Load-balancer/build/build/_deps/nlohmann_json-build/cmake_install.cmake",
+		"/Users/matanamichy/development/Load-balancer/build/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/matanamichy/development/Load-balancer/build/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/matanamichy/development/Load-balancer/build/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,2 @@
+1:ConfigManagerTest.LoadValidConfig
+3:ConfigManagerTest.ThrowsIfInvalidJson

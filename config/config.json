@@ -1,0 +1,10 @@
+{
+  "listen": { "host": "127.0.0.1", "port": 9000 },
+  "backends": [
+    { "host": "127.0.0.1", "port": 9100 },
+     { "host": "127.0.0.1", "port": 9101 },
+      { "host": "127.0.0.1", "port": 9102 }
+  ],
+  "reactor": { "threads": 1 },
+  "logging": { "level": "debug", "mode": "console", "filePath": "" }
+}

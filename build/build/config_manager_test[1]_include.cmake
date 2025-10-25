@@ -1,0 +1,5 @@
+if(EXISTS "/Users/matanamichy/development/Load-balancer/build/build/config_manager_test[1]_tests.cmake")
+  include("/Users/matanamichy/development/Load-balancer/build/build/config_manager_test[1]_tests.cmake")
+else()
+  add_test(config_manager_test_NOT_BUILT config_manager_test_NOT_BUILT)
+endif()

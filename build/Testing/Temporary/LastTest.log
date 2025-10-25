@@ -1,0 +1,99 @@
+Start testing: Oct 17 14:23 IDT
+----------------------------------------------------------
+1/3 Testing: ConfigManagerTest.LoadValidConfig
+1/3 Test: ConfigManagerTest.LoadValidConfig
+Command: "/Users/matanamichy/development/Load-balancer/build/config_manager_test" "--gtest_filter=ConfigManagerTest.LoadValidConfig" "--gtest_also_run_disabled_tests"
+Directory: /Users/matanamichy/development/Load-balancer/build
+"ConfigManagerTest.LoadValidConfig" start time: Oct 17 14:23 IDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/matanamichy/development/Load-balancer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConfigManagerTest.LoadValidConfig
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConfigManagerTest
+[ RUN      ] ConfigManagerTest.LoadValidConfig
+unknown file: Failure
+C++ exception with description "Failed to parse config file: [json.exception.out_of_range.403] key 'filePath' not found" thrown in the test body.
+
+[  FAILED  ] ConfigManagerTest.LoadValidConfig (0 ms)
+[----------] 1 test from ConfigManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ConfigManagerTest.LoadValidConfig
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"ConfigManagerTest.LoadValidConfig" end time: Oct 17 14:23 IDT
+"ConfigManagerTest.LoadValidConfig" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: ConfigManagerTest.ThrowsIfFileNotFound
+2/3 Test: ConfigManagerTest.ThrowsIfFileNotFound
+Command: "/Users/matanamichy/development/Load-balancer/build/config_manager_test" "--gtest_filter=ConfigManagerTest.ThrowsIfFileNotFound" "--gtest_also_run_disabled_tests"
+Directory: /Users/matanamichy/development/Load-balancer/build
+"ConfigManagerTest.ThrowsIfFileNotFound" start time: Oct 17 14:23 IDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/matanamichy/development/Load-balancer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConfigManagerTest.ThrowsIfFileNotFound
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConfigManagerTest
+[ RUN      ] ConfigManagerTest.ThrowsIfFileNotFound
+[       OK ] ConfigManagerTest.ThrowsIfFileNotFound (0 ms)
+[----------] 1 test from ConfigManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConfigManagerTest.ThrowsIfFileNotFound" end time: Oct 17 14:23 IDT
+"ConfigManagerTest.ThrowsIfFileNotFound" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: ConfigManagerTest.ThrowsIfInvalidJson
+3/3 Test: ConfigManagerTest.ThrowsIfInvalidJson
+Command: "/Users/matanamichy/development/Load-balancer/build/config_manager_test" "--gtest_filter=ConfigManagerTest.ThrowsIfInvalidJson" "--gtest_also_run_disabled_tests"
+Directory: /Users/matanamichy/development/Load-balancer/build
+"ConfigManagerTest.ThrowsIfInvalidJson" start time: Oct 17 14:23 IDT
+Output:
+----------------------------------------------------------
+Running main() from /Users/matanamichy/development/Load-balancer/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConfigManagerTest.ThrowsIfInvalidJson
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConfigManagerTest
+[ RUN      ] ConfigManagerTest.ThrowsIfInvalidJson
+/Users/matanamichy/development/Load-balancer/tests/unit/config_manager_test.cpp:84: Failure
+Expected: { ConfigManager manager(filePath); } throws an exception of type runtime_error.
+  Actual: it throws nlohmann::json_abi_v3_11_3::detail::parse_error with description "[json.exception.parse_error.101] parse error at line 1, column 33: syntax error while parsing object - unexpected end of input; expected '}'".
+
+[  FAILED  ] ConfigManagerTest.ThrowsIfInvalidJson (0 ms)
+[----------] 1 test from ConfigManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] ConfigManagerTest.ThrowsIfInvalidJson
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"ConfigManagerTest.ThrowsIfInvalidJson" end time: Oct 17 14:23 IDT
+"ConfigManagerTest.ThrowsIfInvalidJson" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 17 14:23 IDT
