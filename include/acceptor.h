@@ -6,7 +6,7 @@
 #include <thread>
 #include <functional>
 #include "connection_pool.h"
-#include "IConnection.h"
+#include "interfaces/IConnection.h"
 class Acceptor {
 public:
     using AcceptCallback = std::function<void(std::shared_ptr<IConnection> conn, int clientFd, const BackendConfig& backend)>;

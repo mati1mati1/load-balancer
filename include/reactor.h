@@ -1,7 +1,7 @@
 #pragma once
 #include "event_loop.h"
-#include "IConnection.h"
-#include "ILogger.h"
+#include "interfaces/IConnection.h"
+#include "interfaces/ILogger.h"
 #include "connection_pool.h"
 #include <unordered_map>
 #include <memory>

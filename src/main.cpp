@@ -11,8 +11,8 @@
 #include "router.h"
 #include "backend_pool.h"
 #include "event_loop_factory.h"
-#include <IConnection.h>
-#include "ILogger.h"
+#include <interfaces/IConnection.h>
+#include "interfaces/ILogger.h"
 #include "connection_pool.h"
 
 static std::atomic<bool> g_Stop{false};

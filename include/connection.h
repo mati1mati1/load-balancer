@@ -2,7 +2,7 @@
 #include "config_types.h"
 #include "logger.h"
 #include <string>
-#include "IConnection.h"
+#include "interfaces/IConnection.h"
 class Connection : public IConnection {
 public:
     Connection(int clientFd, int backendFd, const BackendConfig& backend, ILogger& logger);

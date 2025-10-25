@@ -1,8 +1,8 @@
 #pragma once
 #include <gmock/gmock.h>
-#include "IConnection.h"
+#include "interfaces/IConnection.h"
 #include "event_loop_factory.h"
-#include "ILogger.h"
+#include "interfaces/ILogger.h"
 
 class MockEventLoop : public IEventLoop {
 public:
